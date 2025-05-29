@@ -2,6 +2,9 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
   <title>Selamat Ulang Tahun!</title>
   <style>
     body {
@@ -141,6 +144,62 @@
   outline: none;
   text-align: center;
 }
+
+
+@media (max-width: 768px) {
+  h1, h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .btn {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .profile {
+    width: 120px;
+    height: 120px;
+  }
+
+  .password-box {
+    font-size: 1em;
+    padding: 8px;
+    width: 80%;
+  }
+
+  iframe {
+    height: 100px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.3em;
+  }
+
+  .btn {
+    font-size: 0.85em;
+    padding: 6px 14px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-item img {
+    border-radius: 10px;
+  }
+}
+
+
 
   </style>
 </head>
